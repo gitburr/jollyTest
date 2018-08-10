@@ -7,6 +7,9 @@ Executing this test case on ubuntu 18.04 LTS (e.g. AWS ami-920b10ed) fails with 
 
 JDK version istalled in both environments is the same (openjdk-8-jdk).
 
+## Note: the cause has been found
+please see https://github.com/svendiedrichsen/jollyday/issues/77
+
 Please see below for relevant test logs:
 
 ## ubuntu 18.04 LTS (failure)
