@@ -1,5 +1,9 @@
 package com.engisys;
 
+import java.time.LocalDate;
+import java.util.Set;
+
+import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,6 +37,14 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+	    	try {
+	    		Set<LocalDate> test = App.setHolidays();
+	    		assertNotNull("Test is null", test);
+	    		Assert.assertTrue((test.size()>0));
+	    		System.out.println("test has " + test.size() + " entries");
+	    	} catch (Throwable t) {
+	    		t.printStackTrace();
+	    		fail("Exception received");
+	    	}
     }
 }
